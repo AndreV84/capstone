@@ -3,7 +3,7 @@
     cd capstone
    # Testing original model
     cd testing_model_code/from_model_supplier
-    cp inputs/frozen_graph.pb .
+    cp ../../inputs/frozen_graph.pb .
     python3 test_frozen_model_TF1-2.py
    # Converting the model
     cp inputs/frozen_graph.pb .
