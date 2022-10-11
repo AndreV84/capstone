@@ -26,5 +26,24 @@
       #JupyterLab
       http://jetson_ip_address:8888
       pass: jupyter
+   # Further acceleration
+    
+    #FP16
+    time /usr/src/tensorrt/bin/trtexec --onnx=model.onnx --saveEngine=model_fp16.engine --fp16
+
+    
+    #INT8
+    time /usr/src/tensorrt/bin/trtexec --onnx=model.onnx --saveEngine=model_int8.engine --int8
+    
+    # infer
+    python trt_classificator_av.py --model=model_fp32.engine --image=testimage.jpg
+    python trt_classificator_av.py --model=model_fp16.engine --image=testimage.jpg
+    python trt_classificator_av.py --model=model_int8.engine --image=testimage.jpg
+
+
+    
+   # Even further acceleration 
+    
+    FP16 & INT8 with Deepstream [ up to 44 fps with INT8, 27 fps with FP16]
 
     
