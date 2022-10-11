@@ -25,7 +25,7 @@ image_size = [1056,1920]
 
 # We load the protobuf file from the disk and parse it to retrieve the 
 # unserialized graph_def
-frozen_graph_filename = "frozen_cortexia_graph.pb"
+frozen_graph_filename = "frozen_graph.pb"
 
 with tf.gfile.GFile(frozen_graph_filename, "rb") as f:
     graph_def = tf.GraphDef()
