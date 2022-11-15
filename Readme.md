@@ -1,3 +1,9 @@
+  | Sample GUI      | Vehicle      |  Cleanliness map
+|------------|-------------|------------------|
+| <img src="https://github.com/AndreV84/capstone/blob/main/misc/leaves.png" width="250"> | <img src="https://github.com/AndreV84/capstone/blob/main/misc/truck_annotated.png" width="250"> | <img src="https://github.com/AndreV84/capstone/blob/main/misc/map.png" width="250">
+  
+   
+   
    # Pre-requisites:     tensorflow tf2onnx TensorRT
     git clone --recursive git@github.com:AndreV84/capstone.git
     cd capstone
